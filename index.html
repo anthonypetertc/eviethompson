@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evie Thompson</title>
+<meta name="description" content="Evie Thompson, PhD candidate in economics at the London School of Economics. Labour and family economics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Inter:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1f2430;
+    --muted: #5d6470;
+    --rule: #e3e7ed;
+    --accent: #1f3a5f;
+    --accent-soft: #eef2f7;
+    --bg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e7e9ee;
+      --muted: #a0a7b3;
+      --rule: #2c3038;
+      --accent: #a9bfdc;
+      --accent-soft: #1f2632;
+      --bg: #15181d;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 "Inter", system-ui, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header { display: flex; gap: 32px; align-items: center; margin-bottom: 36px; }
+  .photo {
+    width: 170px; height: 170px; flex: none;
+    background: var(--accent-soft) url("photo.jpg") center / cover no-repeat;
+  }
+  h1 {
+    font: 600 2.4rem/1.15 "Source Serif 4", Georgia, serif; color: var(--accent);
+    margin: 0 0 6px;
+  }
+  .role { color: var(--muted); margin: 0 0 14px; }
+  .buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+  .button {
+    display: inline-block; padding: 6px 14px;
+    border: 1px solid var(--accent); border-radius: 3px;
+    font-weight: 600; font-size: 0.95rem; font-family: inherit;
+  }
+  .button.primary { background: var(--accent); color: var(--bg); }
+  .button:hover { text-decoration: none; opacity: 0.85; }
+
+  .bio { margin-bottom: 10px; }
+  .market { margin: 0; font-weight: 600; color: var(--accent); white-space: nowrap; }
+  @media (max-width: 420px) { .market { white-space: normal; } }
+
+  h2 {
+    font: 600 1.35rem/1.3 "Source Serif 4", Georgia, serif; color: var(--accent);
+    margin: 44px 0 14px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .paper-title { font: 600 1.15rem/1.35 "Source Serif 4", Georgia, serif; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 6px; }
+  .meta b { color: var(--ink); font-weight: 600; }
+  details { margin: 8px 0 0; }
+  summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 0.95rem; }
+  details p { margin: 10px 0 0; padding: 14px 16px; background: var(--accent-soft); border-radius: 3px; }
+  .placeholder { color: #b3261e; }
+
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  ul.plain li { display: flex; justify-content: space-between; gap: 16px; padding: 4px 0; }
+  ul.plain .year { color: var(--muted); white-space: nowrap; }
+
+  .refs { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+  .refs p { margin: 0; }
+  .refs .name { font-weight: 600; }
+
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 560px) {
+    main { padding-top: 32px; padding-left: 16px; padding-right: 16px; }
+    header { flex-direction: column; align-items: flex-start; gap: 18px; }
+    h1 { font-size: 2rem; }
+    ul.plain li { flex-direction: column; gap: 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <!-- Photo: add photo.jpg next to this file, then uncomment the next line. -->
+    <!-- <div class="photo" role="img" aria-label="Evie Thompson"></div> -->
+    <div>
+      <h1>Evie Thompson</h1>
+      <p class="role">PhD candidate in Economics, London School of Economics<br>
+        <a href="mailto:e.m.jamieson@lse.ac.uk">e.m.jamieson@lse.ac.uk</a></p>
+      <div class="buttons">
+        <a class="button primary" href="cv.pdf">Download CV</a>
+        <a class="button" href="mailto:e.m.jamieson@lse.ac.uk">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <p class="bio">I am a PhD candidate in economics at the London School of Economics, working
+    in labour and family economics. My research studies how people trade off money, time and
+    children when deciding whether, and how many, children to have.</p>
+  <p class="market">I am on the 2026–2027 job market.</p>
+
+  <h2>Job Market Paper</h2>
+  <p class="paper-title">Money, Time, and the Demand for Children</p>
+  <p class="meta">with Guy Michaels</p>
+  <p class="meta">Paper coming soon</p>
+  <p class="meta"><b>Presented at:</b> London Family Economics Workshop; LSE Labour Economics
+    Work in Progress Seminar</p>
+  <details>
+    <summary>Abstract</summary>
+    <p>US fertility has fallen well below replacement, even as stated fertility ideals have not. We ask how much money and time women are willing to trade off for additional children, a question that is difficult to answer using observational data or even natural experiments. We field a discrete choice experiment in which 1,995 women choose between hypothetical futures varying the number of additional children, household income, and time use. Demand falls with both income and time prices, and rises with income faster than proportionally: larger families are a luxury good. Exploratory results show that full-time work, but not part-time work, is perceived as costly, and that baseline demand varies by age, religiosity, and desired fertility even as price responses vary less. Strikingly, most women require compensation, often significant, to accept a second additional child, including many who say they want two more. This finding complicates the standard reading of a stated ideal of two children as evidence of unmet demand: once its price is held fixed, we find little demand to reach it.</p>
+  </details>
+
+  <h2>Work in Progress</h2>
+  <p class="paper-title">Replication as a Form of Deterrence</p>
+  <details>
+    <summary>Abstract</summary>
+    <p>The use of replication in science is crucial for checking the validity of research methods and results. This paper demonstrates another use of replication, as a form of deterrence against low-quality research. I propose a principal-agent model of a journal that publishes a researcher&rsquo;s paper. The journal induces research effort by publishing replications of the researcher&rsquo;s work, introducing a risk that the researcher is caught if they perform bad quality research. If caught, the researcher incurs a reputational cost. When this cost is high, the journal&rsquo;s strategy is more effective and they are able to induce higher effort levels. I also find that the optimal strategy for the journal is to only publish replications that overturn the results of the original study. Finally, when the researcher knows before submitting that their work is poor quality, I characterise the conditions under which the journal chooses to publish enough replications to deter them from submitting.</p>
+  </details>
+
+  <h2>Teaching</h2>
+  <p class="meta">Graduate Teaching Assistant, London School of Economics</p>
+  <ul class="plain">
+    <li><span>Microeconomics I (EC1A1), undergraduate</span><span class="year">2023/24</span></li>
+    <li><span>Contracts and Organisations (EC476), postgraduate</span><span class="year">2023/24</span></li>
+    <li><span>Intermediate Microeconomics (EC201), LSE Summer School</span><span class="year">2023</span></li>
+    <li><span>Microeconomics II (EC2A3), undergraduate</span><span class="year">2022/23</span></li>
+  </ul>
+
+  <h2>References</h2>
+  <div class="refs">
+    <p><span class="name">Matthias Doepke</span><br>London School of Economics<br>
+      <a href="mailto:m.doepke@lse.ac.uk">m.doepke@lse.ac.uk</a></p>
+    <p><span class="name">Guy Michaels</span><br>London School of Economics<br>
+      <a href="mailto:g.michaels@lse.ac.uk">g.michaels@lse.ac.uk</a></p>
+    <p><span class="name">Tim Besley</span><br>London School of Economics<br>
+      <a href="mailto:t.besley@lse.ac.uk">t.besley@lse.ac.uk</a></p>
+  </div>
+
+  <footer>Department of Economics, London School of Economics, Houghton Street, London WC2A 2AE</footer>
+
+</main>
+</body>
+</html>
