@@ -35,7 +35,7 @@
     color: var(--ink);
     font: 16px/1.65 "Inter", system-ui, sans-serif;
   }
-  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
+  main { max-width: 840px; margin: 0 auto; padding: 56px 20px 80px; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
@@ -68,6 +68,7 @@
     border-bottom: 1px solid var(--rule);
   }
   .paper-title { font: 600 1.15rem/1.35 "Source Serif 4", Georgia, serif; margin: 0 0 6px; }
+  details + .paper-title { margin-top: 30px; }
   .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 6px; }
   .meta b { color: var(--ink); font-weight: 600; }
   details { margin: 8px 0 0; }
@@ -97,8 +98,7 @@
 <main>
 
   <header>
-    <!-- Photo: add photo.jpg next to this file, then uncomment the next line. -->
-    <!-- <div class="photo" role="img" aria-label="Evie Thompson"></div> -->
+    <div class="photo" role="img" aria-label="Evie Thompson"></div>
     <div>
       <h1>Evie Thompson</h1>
       <p class="role">PhD candidate in Economics, London School of Economics<br>
@@ -119,14 +119,21 @@
   <p class="paper-title">Money, Time, and the Demand for Children</p>
   <p class="meta">with Guy Michaels</p>
   <p class="meta">Paper coming soon</p>
-  <p class="meta"><b>Presented at:</b> London Family Economics Workshop; LSE Labour Economics
-    Work in Progress Seminar</p>
+  <p class="meta"><b>Presented at:</b> London Family Economics Workshop; LSE Economics Job
+    Market Seminar; LSE Labour Economics Student Conference; LSE Labour Economics Work in
+    Progress Seminar</p>
   <details>
     <summary>Abstract</summary>
-    <p>US fertility has fallen well below replacement, even as stated fertility ideals have not. We ask how much money and time women are willing to trade off for additional children, a question that is difficult to answer using observational data or even natural experiments. We field a discrete choice experiment in which 1,995 women choose between hypothetical futures varying the number of additional children, household income, and time use. Demand falls with both income and time prices, and rises with income faster than proportionally: larger families are a luxury good. Exploratory results show that full-time work, but not part-time work, is perceived as costly, and that baseline demand varies by age, religiosity, and desired fertility even as price responses vary less. Strikingly, most women require compensation, often significant, to accept a second additional child, including many who say they want two more. This finding complicates the standard reading of a stated ideal of two children as evidence of unmet demand: once its price is held fixed, we find little demand to reach it.</p>
+    <p>US fertility has fallen well below replacement, even as stated fertility ideals have not. We ask how much money and time women are willing to trade off for additional children, a question that is difficult to answer using observational data or even natural experiments. We field a discrete choice experiment in which 1,995 women choose between hypothetical futures varying the number of additional children, household income, and time use. Demand falls with both income and time prices, and rises with income faster than proportionally: larger families are a luxury good. Exploratory results show that full-time work, but not part-time work, is perceived as costly, and that baseline demand varies by age, religiosity, and desired fertility even as price responses vary less. Notably, women on average require compensation, often significant, to accept a second additional child, including many who say they want two more. This finding complicates the standard reading of a stated ideal of two children as evidence of unmet demand: once its price is held fixed, we find little demand to reach it.</p>
   </details>
 
   <h2>Work in Progress</h2>
+  <p class="paper-title">Why Do Couples Disagree about Having Children?</p>
+  <details>
+    <summary>Abstract</summary>
+    <p>In low-fertility countries, couples often disagree about having another child, and women are more often the ones who do not want one. Leading theories attribute this partly to the greater care and career costs women expect to bear; across high-income countries, fertility is higher where men do a larger share of domestic work. Yet mothers still do most of the care, despite most men saying they prefer equal household arrangements. Understanding why couples disagree about having another child requires measuring each partner&rsquo;s preferences over the division of care, paid work and income, and how closely their preferences align. This paper fields a choice experiment with couples in which each partner separately chooses between hypothetical futures that randomise the number of additional children, total household income, each partner&rsquo;s share of that income, and both partners&rsquo; paid work and care hours. I estimate how much income and time each partner would give up for another child, and how this depends on the division of care, paid work and earnings. Using both partners&rsquo; choices, I quantify disagreement about having another child under couples&rsquo; current arrangements and predict how it would change under alternative ones.</p>
+  </details>
+
   <p class="paper-title">Replication as a Form of Deterrence</p>
   <details>
     <summary>Abstract</summary>
@@ -134,7 +141,7 @@
   </details>
 
   <h2>Teaching</h2>
-  <p class="meta">Graduate Teaching Assistant, London School of Economics</p>
+  <p class="meta">Class Teacher, London School of Economics</p>
   <ul class="plain">
     <li><span>Microeconomics I (EC1A1), undergraduate</span><span class="year">2023/24</span></li>
     <li><span>Contracts and Organisations (EC476), postgraduate</span><span class="year">2023/24</span></li>
